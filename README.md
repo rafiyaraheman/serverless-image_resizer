@@ -28,40 +28,40 @@ This project is a **serverless image resizer** that automatically resizes images
 
 ## Setup & Deployment
 
-### 1. Prerequisites
+## 1. Prerequisites
 Ensure you have:  
 - **AWS Account** (Free Tier supported)  
 - **Node.js & npm installed**  
 - **AWS CLI configured**  
 - **Serverless Framework (optional, for easier deployment)**  
 
-### 2. Clone the Repository
+## 2. Clone the Repository
 ```sh
 git clone https://github.com/your-username/serverless-image-resizer.git
 cd serverless-image-resizer
 ```
-### 3. Install Dependencies
+## 3. Install Dependencies
 ```
 npm install
 ```
-### 5. Configure AWS Services
+## 5. Configure AWS Services
 
-** Create an S3 Bucket for storing images **
-** Set up API Gateway to expose an endpoint **
-** Deploy Lambda Function with necessary permissions **
+1. **Create an S3 Bucket for storing images**
+2. **Set up API Gateway to expose an endpoint**
+3. **Deploy Lambda Function with necessary permissions**
 
-### 6. Deploy Using Serverless Framework (Optional)
- ** If using Serverless Framework, deploy with: **
+## 6. Deploy Using Serverless Framework (Optional)
+ **If using Serverless Framework, deploy with:**
  ```
 serverless deploy
 ```
 
-### Usage
- ** Uploading an Image **
-** Upload an image to the S3 bucket via AWS Console or SDK. **
-** The Lambda function resizes and saves it.**
-### Accessing Resized Image
-** Use API Gateway to get the resized image:**
+## Usage
+1. **Uploading an Image**
+2. **Upload an image to the S3 bucket via AWS Console or SDK.**
+3. **The Lambda function resizes and saves it.**
+4. ### Accessing Resized Image
+5. **Use API Gateway to get the resized image:**
 ```
 https://your-api-gateway-url.com/resize?key=your-image.jpg&width=300&height=200
 ```
