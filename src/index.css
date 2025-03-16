@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav img {
+  height: 17px;
+  margin-right: 10px;
+}
+
+nav span {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Upload Container */
+.upload-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  width: 400px;
+  margin-top: 80px; /* Space below the navbar */
+}
+
+/* Drag & Drop Box */
+.drop-zone {
+  border: 2px dashed #999;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+button:disabled {
+  background-color: grey;
+}
+
+/* Download Button */
+.download-button {
+  margin-top: 15px;
+}
